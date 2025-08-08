@@ -9,7 +9,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors:{
-        origin:process.env.BE_URI,
+        origin:process.env.FE_URI,
         methods:["GET", "POST"],
     }
 });
