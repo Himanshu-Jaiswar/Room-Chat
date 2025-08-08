@@ -1,0 +1,86 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mainDiv{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+}
+
+.roomDiv{
+    width: 99%;
+    display: flex;
+    justify-content: center;
+    background-color:  rgb(80, 243, 65);;
+    padding: 5px;
+    font-weight: bold;
+
+}
+
+.msg-leavebtn{
+    background-color: rgb(80, 243, 65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.messageDiv{
+    margin: 5px;
+}
+
+.inputBox{
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.chat-container{
+    background-color: rgb(209, 253, 209);
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 5px;
+    height: 700px;
+    overflow-y: scroll;
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(252, 102, 102);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border: 5px groove ;
+    
+}
+
+#someone{
+    display: flex;
+    justify-content: start;
+    margin: 5px;
+}
+
+#you{
+    display: flex;
+    justify-content: end;
+    margin: 5px;
+}
+
+@media (max-width : 375px) {
+    .roomDiv{
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+}
