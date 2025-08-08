@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 import LeaveChat from './component/LeaveChat';
 
 
-const socket = io("http://localhost:9000");
+const socket = io("https://room-chat-71qu.onrender.com");
 
 function App() {
   const [room, setRoom] = useState("");
