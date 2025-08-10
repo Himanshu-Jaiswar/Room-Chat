@@ -11,7 +11,9 @@ export default function Chats({chat, socket}) {
         {chat.map((value, index) => {
           const isYou = value.sender;
           const Randomkey = Math.random() * 10000;
-          return <div key={Randomkey} id={`${isYou === socket.id ? "you" : "someone"}`}><li 
+          return <div key={Randomkey} id={`${isYou === socket.id ? "you" : "someone"}`}>
+            <li
+            className={"chat-message-box"} 
           key={index}> {isYou === socket.id ? `You: ${value.userMessage}` : `${value.otherName}: ${value.userMessage}`}
           </li>
           </div>

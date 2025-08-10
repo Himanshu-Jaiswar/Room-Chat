@@ -14,7 +14,7 @@ export default function LeaveChat(props) {
   return (
     <div>
       <form onSubmit={onLeaveHanlder}>
-        <button type='submit'>Leave</button>
+        <button type='submit' className='btn'>Leave</button>
       </form>
     </div>
   )

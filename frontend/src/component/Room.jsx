@@ -38,7 +38,7 @@ export default function Room(props) {
                     required
                     className='inputBox'
                 />
-                <button type='submit' id='roomBtn'>Enter</button>
+                <button type='submit' className='btn'>Enter</button>
             </form>
         </div>
     )
