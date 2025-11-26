@@ -37,6 +37,9 @@ function App() {
   return (
     <div className='mainDiv'>
 
+        { joinedRoom ? <h2 style={{textAlign:'center'}}>Room Id : {joinedRoom}</h2> : null}
+
+
         <div className='chat-container'>
 
           <Chats
@@ -57,10 +60,12 @@ function App() {
         }
 
         
-        
 
         {joinedRoom &&
-        <div className='msg-leavebtn'> <MessagesForm
+
+        <div className='msg-leavebtn'> 
+       
+        <MessagesForm
         message={message}
         setMessage={setMessage}
         socket={socket}
